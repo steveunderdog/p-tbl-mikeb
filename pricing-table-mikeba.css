@@ -199,3 +199,19 @@
     background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-left-b-512.png');
     background-size: cover;
 }
+
+.iframe-mask {
+  overflow: hidden; /* Hide any content outside this container */
+  display: flex; /* Utilize Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 620px; /* Set a fixed height to cut off white space, adjust based on your needs */
+}
+
+.iframe-mask iframe {
+  height: 670px; /* Slightly larger height to ensure desired content is visible */
+  width: 100%; /* Ensure iframe takes full width of the container */
+  border: 0; /* Remove any default border */
+  position: relative; /* Needed for positioning adjustments */
+  top: -50px; /* Adjust this value to hide white space at the top, modify as necessary */
+}
